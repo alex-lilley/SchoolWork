@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ONLINE BANKING FIRST PAGE</title>
+        <style>
+            #questionText, #loginBut {
+                display:none;
+            }
+        </style>
+    </head>
+    
+    <body>
+<!--
+        Register stores info into the database
+        Make sure both the password and secret are both 5-10 characters long before inserting it
+        
+        When showLogin is clicked on, hide the question input, and display the loginBut and questText
+
+        Login checks if password, secret, and name ALL matches, if user exists, save sessions and move on to transfer
+
+        If it doesn't exist, then do ANOTHER check for name and password, if it matches then show the question to the secret in the questionText div.
+
+        EG if I register with
+        name -> "Henry"
+        passowrd -> "mypass"
+        secret -> "bambam"
+        question -> "a sound I like to make"
+
+        Then I login with "Henry", "mypass", "notbambam", the system will give me a hint in the questionText div with "a sound I like to make"
+
+-->
+        <script src="/scripts/mainbundle.js"></script>
+        <button id='showLogin'>Show Login</button>
+        <div id='startBox'>
+            <input id='password' type='password' placeholder="password"/>
+            <input id='secret' type='text' placeholder="secret"/>
+            <input id='name' type='text' placeholder="name"/>
+            <input id='question' type='text' placeholder="question"/>
+
+            <button id='registerBut'>REGISTER</button>
+            
+            <button id='loginBut'>LOGIN</button>
+            <div id='questionText'></div>
+        </div>
+    </body>
+</html>

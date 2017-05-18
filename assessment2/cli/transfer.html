@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ATM SECOND PAGE</title>
+        
+        <style>
+            #numberBox {
+                display:none;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <script src="/scripts/transferbundle.js"></script>
+<!--
+    Show the numberBox when payment or transfer button is clicked on.
+    Destroy sessions upon logout
+-->
+        
+        <div id='controlBox'>
+            TRANSFER MONEY <hr/>
+            <button id='payments'>MAKE PAYMENT</button>
+            <button id='transfer'>TRANSFER TO ACCOUNT</button>
+            <button id='statistics'>SEE STATISTICS</button>
+            <button id='logout'>LOGOUT</button>
+        </div>
+        
+
+<!--
+    Clicking on OK inserts information into the database
+    If payments was selected, then insert "payment" as the "transfer_type". If transfer was selected, insert "account" as the "transfer_type"
+-->
+        <div id='numberBox'>
+            <input type='number' id='amount' />
+            <button id='enter'>OK</button>
+        </div>
+    </body>
+</html>
