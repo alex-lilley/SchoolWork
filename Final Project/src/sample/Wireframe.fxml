@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="1202.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Label text="&lt;Program Name&gt;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </buttons>
+      </ButtonBar>
+      <Button id="load" layoutX="389.0" layoutY="40.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="97.0" text="Load" />
+      <Button id="getFile" layoutX="252.0" layoutY="40.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="97.0" text="Get File" />
+       <Accordion layoutX="14.0" layoutY="113.0" />
+      <TextField layoutX="55.0" layoutY="40.0" promptText="File" />
+      <TextField layoutX="1011.0" layoutY="41.0" promptText="Ideal Time" />
+    <TitledPane animated="false" layoutX="55.0" layoutY="132.0" prefHeight="26.0" prefWidth="149.0" text="Statistics" />
+    <TitledPane animated="false" layoutX="55.0" layoutY="158.0" prefHeight="26.0" prefWidth="149.0" text="Graph Info" />
+      <CheckBox layoutX="389.0" layoutY="75.0" mnemonicParsing="false" text="Comparison" />
+      <ColorPicker layoutX="755.0" layoutY="40.0" promptText="Line Color" />
+      <MenuButton layoutX="649.0" layoutY="41.0" mnemonicParsing="false" text="Current Line">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <TextField layoutX="55.0" layoutY="71.0" promptText="Comparison File" />
+      <TabPane layoutX="252.0" layoutY="101.0" prefHeight="415.0" prefWidth="935.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Graph &lt;Filename&gt;">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <LineChart prefHeight="400.0" prefWidth="924.0" title="Current Speed of &lt;Filename&gt; Packets">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Graph &lt;Comparison&gt;">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

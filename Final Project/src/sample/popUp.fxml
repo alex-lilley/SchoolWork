@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label prefHeight="17.0" prefWidth="606.0" text="NOTE: To use this app, you must open a file (or as many files as you need) by clicking File, then clicking Open." textAlignment="CENTER">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </Label>
+      <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="606.0" text="This will create a new tab. You can create as many tabs as you want and you can look at the data from each tab." textAlignment="CENTER" />
+      <Label layoutX="10.0" layoutY="27.0" prefHeight="17.0" prefWidth="606.0" text="You can also compare the data from 2-4 tabs by clicking Edit, then Compare." textAlignment="CENTER" />
+      <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="600.0" text="To change the contents of a tab, click Edit, then click on the menu button that corresponds with the" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </Label>
+      <Label layoutX="10.0" layoutY="27.0" prefHeight="17.0" prefWidth="606.0" text="information you want to display." textAlignment="CENTER" />
+   </children>
+</VBox>
