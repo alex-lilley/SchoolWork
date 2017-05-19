@@ -9,8 +9,8 @@ const bodyParser = require("body-parser");
 var CLF = path.resolve(__dirname,"cli");
 
 var app = express();
-
-var dbURL = process.env.DATABASE_URL || "postgres://postgres:fireice27090362@localhost:5432/online_banking";
+// for windows this is how to access the postgre database replace PASSWORD with the correct PASSWORD different for other Operating Systems
+var dbURL = process.env.DATABASE_URL || "postgres://postgres:PASSWORD@localhost:5432/online_banking";
 
 const sv = require("http").createServer(app);
 //create a socket server with the new server
